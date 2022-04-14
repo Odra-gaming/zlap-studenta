@@ -78,9 +78,11 @@ abstract class InfrastructureBehaviour : MonoBehaviour
         // Add the mesh filter and renderer components to the object
         MeshFilter mf = go.AddComponent<MeshFilter>();
         MeshRenderer mr = go.AddComponent<MeshRenderer>();
+        //SpriteRenderer sr = go.AddComponent<SpriteRenderer>();
 
         // Apply the material
         mr.material = mat;
+        //sr.sprite = spr;
 
         // Create the collections for the object's vertices, indices, UVs etc.
         List<Vector3> vectors = new List<Vector3>();
@@ -96,6 +98,7 @@ abstract class InfrastructureBehaviour : MonoBehaviour
         mf.mesh.normals = normals.ToArray();
         mf.mesh.triangles = indices.ToArray();
         mf.mesh.uv = uvs.ToArray();
+
     }
 
     protected abstract void OnObjectCreated(OsmWay way, Vector3 origin, List<Vector3> vectors, List<Vector3> normals, List<Vector2> uvs, List<int> indices);

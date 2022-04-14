@@ -68,6 +68,6 @@ class OsmBounds : BaseOsm
         // Create the centre location
         float x = (float)((MercatorProjection.lonToX(MaxLon) + MercatorProjection.lonToX(MinLon)) / 2);
         float y = (float)((MercatorProjection.latToY(MaxLat) + MercatorProjection.latToY(MinLat)) / 2);
-        Centre = new Vector3(x, 0, y);
+        Centre = new Vector3(x, y, 0);
     }
 }

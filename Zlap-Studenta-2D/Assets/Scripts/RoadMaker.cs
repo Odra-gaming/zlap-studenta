@@ -30,6 +30,7 @@ using UnityEngine;
 class RoadMaker : InfrastructureBehaviour
 {
     public Material roadMaterial;
+    //public Sprite roadSprite;
 
     /// <summary>
     /// Create the roads.
