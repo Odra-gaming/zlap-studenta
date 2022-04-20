@@ -120,7 +120,8 @@ class OsmWay : BaseOsm
             }
             else if (key == "highway")
             {
-                IsRoad = true;
+                if("primary"==GetAttribute<string>("v", t.Attributes) || "secondary"==GetAttribute<string>("v", t.Attributes) || "tertiary"==GetAttribute<string>("v", t.Attributes))
+                    IsRoad = true;
             }
             else if (key=="lanes")
             {
