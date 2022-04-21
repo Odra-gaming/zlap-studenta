@@ -30,8 +30,8 @@ public class Player_Movement : MonoBehaviour
         player_x = player_object.transform.position.x;
         player_z = player_object.transform.position.z;
 
-        Debug.Log("DIRECT X: " + moveDirection.x +" Z: " + moveDirection.z);
-        Debug.Log("VELOCITY: " + player_object.velocity);
+        //Debug.Log("DIRECT X: " + moveDirection.x +" Z: " + moveDirection.z);
+        //Debug.Log("VELOCITY: " + player_object.velocity);
 
         if(Input.GetMouseButton(0))
         {

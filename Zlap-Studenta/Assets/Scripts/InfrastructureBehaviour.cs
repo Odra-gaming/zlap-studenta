@@ -79,6 +79,13 @@ abstract class InfrastructureBehaviour : MonoBehaviour
         MeshFilter mf = go.AddComponent<MeshFilter>();
         MeshRenderer mr = go.AddComponent<MeshRenderer>();
 
+        MeshCollider mc = go.AddComponent<MeshCollider>();
+        mc.convex = true;
+        mc.isTrigger = true;
+
+        RoadCollisions rc = go.AddComponent<RoadCollisions>();
+
+
         // Apply the material
         mr.material = mat;
 
@@ -96,6 +103,9 @@ abstract class InfrastructureBehaviour : MonoBehaviour
         mf.mesh.normals = normals.ToArray();
         mf.mesh.triangles = indices.ToArray();
         mf.mesh.uv = uvs.ToArray();
+
+
+        mc.sharedMesh = mf.mesh;
     }
 
     protected abstract void OnObjectCreated(OsmWay way, Vector3 origin, List<Vector3> vectors, List<Vector3> normals, List<Vector2> uvs, List<int> indices);
