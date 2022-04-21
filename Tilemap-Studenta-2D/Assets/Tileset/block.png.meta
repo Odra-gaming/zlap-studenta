@@ -36,8 +36,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -137,13 +137,21 @@ TextureImporter:
         - {x: 128, y: -6}
         - {x: 128, y: 6}
         - {x: 66, y: 114}
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 128, y: -5}
+        - {x: 65, y: -113}
+        - {x: -65, y: -113}
+        - {x: -128, y: -5}
+        - {x: -128, y: 5}
+        - {x: -65, y: 113}
+        - {x: 65, y: 113}
+        - {x: 128, y: 5}
+      tessellationDetail: 1
       bones: []
       spriteID: 37fc5a28112c12620800000000000000
       internalID: 2747690628134850419
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
     outline:
@@ -160,13 +168,13 @@ TextureImporter:
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag:
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
