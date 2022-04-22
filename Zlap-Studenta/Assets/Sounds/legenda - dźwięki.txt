@@ -1,0 +1,9 @@
+pies poruszanie sie - "animals_dog_bark.mp3"
+kot poruszanie sie - "animal_cat_meow.mp3"
+chomik poruszanie sie - "hamster_wheel_spin.mp3"
+osmiornica poruszanie sie - "plunger-pop-1.wav" lub "water-tapping-invertedpapercup.wav"
+niedzwiedz poruszanie sie - "bear-groan.wav"
+zaba poruszanie sie - "egomassive__frog.ogg"
+zderzenie - 
+zjedzenie duszka - 
+muzyka w tle - 
