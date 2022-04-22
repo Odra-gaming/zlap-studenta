@@ -14,7 +14,7 @@ public class player_movement : MonoBehaviour
     void Start()
     {
         if (player_object == null)
-        {\
+        {
             player_object = GetComponent<Rigidbody2D>();
         }
 
