@@ -72,6 +72,7 @@ public class player_movement : MonoBehaviour
     void Moving()
     {
         player_object.velocity = new Vector3(moveDirection.x * player_speed, moveDirection.y * player_speed, 0);
+        mainCamera.transform.position = new Vector3(player_object.transform.position.x, player_object.transform.position.y, -10);
     }
 
 }
