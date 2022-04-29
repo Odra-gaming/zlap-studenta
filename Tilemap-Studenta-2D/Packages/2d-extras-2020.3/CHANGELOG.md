@@ -3,20 +3,20 @@ All notable changes to this package will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
-## [2.2.3] - 2022-04-01
+## [1.8.3-preview] - 2022-04-01
 ### Fixed
 - [RuleOverrideTile] -Mark RuleOverrideTile InstanceTile as dirty when overriding RuleTile for the RuleOverrideTile changes
 - [RuleOverrideTile] -Fix undo for RuleOverrideTile when overriding RuleTile has changed
 - [RuleTileEditor] -Fix height for ReorderableList when extending the view for marking Rules
 
-## [2.2.2] - 2022-03-03
+## [1.8.2-preview] - 2022-03-03
 ### Fixed
 - [AnimatedTileEditor] -Fix undo when setting number of Sprites for Animated Tile
 - [RuleTile] -Fix data for custom container fields not being transferred in RuleOverrideTiles overriding a Custom Rule Tile
 - [RuleTileEditor] -Fix undo when setting number of Rules for Rule Tile
 - [RuleTileEditor] -Use different text color for Extend Neighbors with dark and light skin
 
-## [2.2.1] - 2021-08-24
+## [1.8.1-preview] - 2021-08-24
 ### Changed
 - [GameObjectBrush] Add canChangePosition
 - [GameObjectBrush] Use GridLayout from BrushTarget if it has one
@@ -31,33 +31,26 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 - [TintBrush] Convert cell positions to world positions based on the Grid used
 - [TintBrush] Add k_ScaleFactor for better precision when painting on non-rectangular Tilemaps
 
-### Fixed
-- [RuleTile] Fixed error in RuleTileEditor when removing all Rules and adding a new Rule
-
-## [2.2.0] - 2021-06-01
+## [1.8.0-preview] - 2021-06-01
+### Changed
 - [RuleTileEditor] Add tooltips to fields
 - Add required package dependencies
 
-## [2.1.0] - 2021-05-06
+## [1.7.0-preview] - 2021-05-06
 ### Changed
 - [RuleTile] Improve performance of RuleTile caching
 - [RuleTileEditor] Allow non-public fields with the SerializeField attribute as custom fields for RuleTile
 - Make U2DExtrasPlaceholder internal
 
-### Fixed
-- [RuleTileEditor] Fix exception when adding a new Rule when no Rule is selected
-
-## [2.0.0] - 2021-03-17
-- Update version to 2.0.0
-
-## [2.0.0-pre.3] - 2021-02-19
+## [1.6.4-preview] - 2021-02-19
+### Changed
 - [HexagonalRuleTile] Fix issue with mirror rule
 - [RuleTile] Add min and max animation speedup
 - [RuleOverrideTile] Fix import issue when upgrading from a previous version of RuleOverrideTile
 - [RuleTileEditor] Add new rule below selected rule in RuleTileEditor
 - [RuleTileEditor] Add dropdown to duplicate Rule
 
-## [2.0.0-pre.2] - 2020-11-26
+## [1.6.3-preview] - 2020-11-26
 ### Changed
 - Update documentation
 - Add contribution notice in README.md
@@ -66,9 +59,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 - [PrefabBush] Add tooltip for "Erase Any Objects" field
 - [PrefabBrush][GameObjectBrush] Account for Anchor when using GetObjectsInCell in PrefabBrush and GameObjectBrush
 - [CustomRuleTileScript] Allow Custom Rule Tile template script to be created regardless of where template script is installed (from a package or in the project)
-
-## [2.0.0-pre.1] - 2020-10-14
-- Update version to 2.0.0-pre.1
 
 ## [1.6.2-preview] - 2020-09-25
 ### Changed

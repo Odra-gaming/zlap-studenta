@@ -3,7 +3,11 @@ using UnityEngine;
 
 public class player_movement : MonoBehaviour
 {
-    private Rigidbody2D player_object = null;
+    public SpriteRenderer spriteRenderer { get; private set; }
+    public new Collider2D collider { get; private set; }
+    public Vector3 startingPosition;
+
+    public Rigidbody2D player_object = null;
     private Vector3 moveDirection;
     private Vector3 mousePosition;
     private float player_x;
@@ -11,14 +15,33 @@ public class player_movement : MonoBehaviour
     [SerializeField] private float player_speed = 100;
     [SerializeField] private Camera mainCamera;
 
-    void Start()
+    void Awake()
     {
         if (player_object == null)
         {
             player_object = GetComponent<Rigidbody2D>();
         }
 
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        collider = GetComponent<Collider2D>();
+    }
 
+    private void Start()
+    {
+        ResetState();
+    }
+
+    public void ResetState()
+    {
+        enabled = true;
+        spriteRenderer.enabled = true;
+        collider.enabled = true;
+
+        transform.position = startingPosition;
+        player_object.isKinematic = false;
+        enabled = true;
+
+        gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -30,7 +53,7 @@ public class player_movement : MonoBehaviour
         //Debug.Log("DIRECT X: " + moveDirection.x +" Z: " + moveDirection.z);
         //Debug.Log("VELOCITY: " + player_object.velocity);
 
-        Debug.Log("DIRECT X: " + mousePosition.x + " Z: " + mousePosition.y);
+        //Debug.Log("DIRECT X: " + mousePosition.x + " Z: " + mousePosition.y);
 
         if (Input.GetMouseButton(0))
         {

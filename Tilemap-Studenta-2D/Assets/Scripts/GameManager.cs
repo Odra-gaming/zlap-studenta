@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     //trzeba skonwertowa? nasze aktualne mapy na game objects, zeby przekazywac je jako kolejne mapy do gry dla gracza w funkcji NextRound()/NewRound()
     //public GameObject[] Maps;
 
-    public Player player;
+    public player_movement player;
 
     public Transform pellets;
 
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
 
         }
 
-        player.gameObject.SetActive(true);
+        player.ResetState();
 
     }
 
@@ -104,8 +104,8 @@ public class GameManager : MonoBehaviour
     //Gracz "zjada" przeciwnika
     public void EnemyPowered(Enemy enemy)
     {
-        int points = enemy.points * multiplier;
-        SetScore(score + points);
+        //int points = enemy.points * multiplier;
+        //SetScore(score + points);
         multiplier++;
     }
 
@@ -148,7 +148,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < enemies.Length; i++)
         {
-            enemies[i].frightened.Enable(pellet.duration);
+            //enemies[i].frightened.Enable(pellet.duration);
         }
 
         PelletEaten(pellet);

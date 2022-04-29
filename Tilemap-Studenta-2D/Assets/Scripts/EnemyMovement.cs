@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Movement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
     public float speed = 8f;
     public float speedMultiplier = 1f;
@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     public new Rigidbody2D rigidbody { get; private set; }
     public Vector2 direction { get; private set; }
     public Vector2 nextDirection { get; private set; }
-    public Vector3 startingPosition { get; private set; }
+    public Vector3 startingPosition;
 
     private void Awake()
     {
