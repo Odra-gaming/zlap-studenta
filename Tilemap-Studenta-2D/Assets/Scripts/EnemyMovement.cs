@@ -26,7 +26,6 @@ public class EnemyMovement : MonoBehaviour
 
     public void ResetState()
     {
-        Debug.Log("to resetuje pozycjê przeciwnika");
         speedMultiplier = 1f;
         direction = initialDirection;
         nextDirection = Vector2.zero;

@@ -58,6 +58,7 @@ public class player_movement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             PlayerInputs();
+            Debug.Log("I'm walking here");
         }
         else
         {
@@ -79,7 +80,6 @@ public class player_movement : MonoBehaviour
         mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0f;
 
-        
 
         moveDirection.x = (mousePosition.x - player_x);
         moveDirection.y = (mousePosition.y - player_y);
@@ -88,14 +88,12 @@ public class player_movement : MonoBehaviour
         moveDirection.x /= (float)length;
         moveDirection.y /= (float)length;
 
-
-
     }
 
     void Moving()
     {
         player_object.velocity = new Vector3(moveDirection.x * player_speed, moveDirection.y * player_speed, 0);
-        mainCamera.transform.position = new Vector3(player_object.transform.position.x, player_object.transform.position.y, -10);
+        mainCamera.transform.position = new Vector3(player_object.transform.position.x, player_object.transform.position.y, -2);
     }
 
 }

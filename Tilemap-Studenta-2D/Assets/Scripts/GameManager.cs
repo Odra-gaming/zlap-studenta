@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public Enemy[] enemies;
 
-    //trzeba skonwertowa? nasze aktualne mapy na game objects, zeby przekazywac je jako kolejne mapy do gry dla gracza w funkcji NextRound()/NewRound()
     //public GameObject[] Maps;
 
     public player_movement player;
 
     public Transform pellets;
+
+    public UIHandler UI;
 
     public int multiplier { get; private set; } = 1;
 
@@ -41,6 +43,7 @@ public class GameManager : MonoBehaviour
         SetScore(0);
         SetLives(3);
         NewRound();
+        UI.noWinYet();
     }
 
 
@@ -48,6 +51,7 @@ public class GameManager : MonoBehaviour
     private void SetScore(int score)
     {
         this.score = score;
+        UI.setScore(score);
 
     }
 
@@ -67,10 +71,8 @@ public class GameManager : MonoBehaviour
     //reset state - gra zostaje zrestartowana OPROCZ aktualnie zjedzonych pelletsow
     private void ResetState()
     {
-        Debug.Log("reset state gry - rozpoczêcie resetowania przeciwników i gracza");
         for (int i = 0; i < enemies.Length; i++)
         {
-            Debug.Log("reset state gry - wywo³anie resetu przeciwników");
             enemies[i].ResetState();
             
 
@@ -85,6 +87,7 @@ public class GameManager : MonoBehaviour
     private void SetLives(int lives)
     {
         this.lives = lives;
+        UI.setLives(lives);
 
     }
 
@@ -142,6 +145,7 @@ public class GameManager : MonoBehaviour
         if (!HasRemainingPellets())
         {
             player.gameObject.SetActive(false);
+            UI.setWin();
             Invoke(nameof(NewRound), 3f);
         }
     }
