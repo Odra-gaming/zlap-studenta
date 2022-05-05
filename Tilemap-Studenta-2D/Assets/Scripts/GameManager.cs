@@ -67,10 +67,12 @@ public class GameManager : MonoBehaviour
     //reset state - gra zostaje zrestartowana OPROCZ aktualnie zjedzonych pelletsow
     private void ResetState()
     {
-
+        Debug.Log("reset state gry - rozpoczêcie resetowania przeciwników i gracza");
         for (int i = 0; i < enemies.Length; i++)
         {
-            enemies[i].gameObject.SetActive(true);
+            Debug.Log("reset state gry - wywo³anie resetu przeciwników");
+            enemies[i].ResetState();
+            
 
         }
 

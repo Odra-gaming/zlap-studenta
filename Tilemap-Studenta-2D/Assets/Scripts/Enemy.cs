@@ -32,8 +32,8 @@ public class Enemy : MonoBehaviour
         movement.ResetState();
 
         //frightened.Disable();
-        //chase.Disable();
-        //scatter.Enable();
+        chase.Disable();
+        scatter.Enable();
 
         if (home != initialBehavior)
         {
@@ -55,10 +55,8 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("aaa");
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            Debug.Log("bbb");
             if (frightened.enabled)
             {
                 FindObjectOfType<GameManager>().EnemyPowered(this);
