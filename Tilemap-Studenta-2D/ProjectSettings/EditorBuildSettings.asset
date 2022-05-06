@@ -5,25 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/krakow.unity
-    guid: 63159b326dee4e24fb975ebd364fe826
-  - enabled: 0
-    path: Assets/Scenes/Lublin.unity
-    guid: 0e44ff57c84832042a2af60f24e32a2d
-  - enabled: 0
-    path: Assets/Scenes/Poznan.unity
-    guid: 1f5fbe71a0ed3154bb0ed5b7fb21c227
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2c37113a8dfd8b54b800f3be7cc3011e
   - enabled: 1
     path: Assets/Scenes/Wroclaw.unity
     guid: 07e15cb1d3c2d354c8c476761c6af02b
-  - enabled: 0
-    path: Assets/Scenes/krakow.unity
-    guid: 63159b326dee4e24fb975ebd364fe826
-  - enabled: 0
-    path: Assets/Scenes/Warszawa.unity
-    guid: d021548d58a82ea4fab390a1681aed8c
   m_configObjects: {}
