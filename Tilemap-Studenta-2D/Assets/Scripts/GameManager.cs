@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         NewGame();
     }
 
-    //sprawdzanie, czy gracz zresetowa³ grê po jej zakoñczeniu
+    //sprawdzanie, czy gracz zresetowaÂ³ grÃª po jej zakoÃ±czeniu
     private void Update()
     {
         if (lives <= 0 && Input.anyKeyDown)
@@ -124,6 +124,8 @@ public class GameManager : MonoBehaviour
     //gracz zostaje "zjedzony" przez przeciwnika
     public void PlayerLost()
     {
+        FindObjectOfType<AudioManagerScript>().Play("Death");
+        
         //wylacz obiekt gracza
         player.gameObject.SetActive(false);
 
@@ -158,6 +160,8 @@ public class GameManager : MonoBehaviour
 
     public void PowerPelletEaten(PowerPellet pellet)
     {
+        FindObjectOfType<AudioManagerScript>().Play("PowerPellet");
+    
         for (int i = 0; i < enemies.Length; i++)
         {
             //enemies[i].frightened.Enable(pellet.duration);
