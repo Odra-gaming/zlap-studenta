@@ -65,6 +65,7 @@ public class player_movement : MonoBehaviour
             moveDirection.x = 0;
             moveDirection.y = 0;
             player_object.velocity = new Vector3(0, 0, 0);
+            FindObjectOfType<AudioManagerScript>().Play("Hamster");
         }
     }
 
