@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 9167064334740301455}
   - component: {fileID: 8020874310377248551}
   - component: {fileID: 2640834198438565327}
+  - component: {fileID: -1221920514386819837}
   m_Layer: 7
   m_Name: EnemyBase
   m_TagString: Untagged
@@ -213,3 +214,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-1221920514386819837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107833607085041770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d54e8cf1f17d9843843bdf992c92952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  animationIndex: 0
+  animationTime: 0.25
+  loop: 1

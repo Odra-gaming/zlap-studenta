@@ -16,10 +16,11 @@ public class GameManager : MonoBehaviour
     public UIHandler UI;
 
     public int multiplier { get; private set; } = 1;
-
+    public float holdTime = 2.0f;
     public int score { get; private set; }
 
     public int lives { get; private set; }
+
 
 
     //rozpocznij gre na start
@@ -34,6 +35,11 @@ public class GameManager : MonoBehaviour
         if (lives <= 0 && Input.anyKeyDown)
         {
             NewGame();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 
