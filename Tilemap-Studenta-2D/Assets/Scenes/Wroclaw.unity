@@ -8466,11 +8466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4710355833526885099, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.23
+      value: -3.78
       objectReference: {fileID: 0}
     - target: {fileID: 4710355833526885099, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.73
+      value: 6.53
       objectReference: {fileID: 0}
     - target: {fileID: 4710355833526885099, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9704,10 +9704,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1959a707312288d45873524b85e11d52, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.735
   m_Pitch: 0.9
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -10063,7 +10063,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 72b40b240d8e80a479b9eeb0328c7cf5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5d90657e0a1c1f5479e1ac8255640e94, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1.2
@@ -10408,11 +10408,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1973646474743410216, guid: 00282c55aa6554540bcee1a4eddcd324, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.254
       objectReference: {fileID: 0}
     - target: {fileID: 1973646474743410216, guid: 00282c55aa6554540bcee1a4eddcd324, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.2
+      value: -0.419
       objectReference: {fileID: 0}
     - target: {fileID: 1973646474743410216, guid: 00282c55aa6554540bcee1a4eddcd324, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10473,6 +10473,10 @@ PrefabInstance:
     - target: {fileID: 6152645398470876329, guid: 00282c55aa6554540bcee1a4eddcd324, type: 3}
       propertyPath: m_Name
       value: Bear
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152645398470876329, guid: 00282c55aa6554540bcee1a4eddcd324, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00282c55aa6554540bcee1a4eddcd324, type: 3}
@@ -10683,6 +10687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Osminozek
       objectReference: {fileID: 0}
+    - target: {fileID: 8999011483434073831, guid: 51ef9fc1663c1c244b4267e1c1d63021, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ef9fc1663c1c244b4267e1c1d63021, type: 3}
 --- !u!1001 &9138536005500291185
@@ -10743,6 +10751,10 @@ PrefabInstance:
     - target: {fileID: 8182278422446530762, guid: 9f21aaca94c701a44b57b3a322dd5762, type: 3}
       propertyPath: m_Name
       value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8182278422446530762, guid: 9f21aaca94c701a44b57b3a322dd5762, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f21aaca94c701a44b57b3a322dd5762, type: 3}
