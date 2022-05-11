@@ -115,8 +115,8 @@ public class GameManager : MonoBehaviour
     //Gracz "zjada" przeciwnika
     public void EnemyPowered(Enemy enemy)
     {
-        //int points = enemy.points * multiplier;
-        //SetScore(score + points);
+        int points = enemy.points * multiplier;
+        SetScore(score + points);
         multiplier++;
     }
 
@@ -164,7 +164,7 @@ public class GameManager : MonoBehaviour
     
         for (int i = 0; i < enemies.Length; i++)
         {
-            //enemies[i].frightened.Enable(pellet.duration);
+            enemies[i].frightened.Enable(pellet.duration);
         }
 
         PelletEaten(pellet);

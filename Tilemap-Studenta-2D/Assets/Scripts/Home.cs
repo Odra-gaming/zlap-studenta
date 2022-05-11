@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Home : Behavior
 {
-    // Start is called before the first frame update
-    void Start()
+    public Vector3 homePosition;
+    public Vector3 exitPosition;
+
+    private void OnEnable()
     {
-        
+        enemy.SetPosition(homePosition);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        enemy.SetPosition(exitPosition);
     }
+
 }

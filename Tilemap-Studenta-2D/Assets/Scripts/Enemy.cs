@@ -31,13 +31,13 @@ public class Enemy : MonoBehaviour
         gameObject.SetActive(true);
         movement.ResetState();
 
-        //frightened.Disable();
+        frightened.Disable();
         chase.Disable();
         scatter.Enable();
 
         if (home != initialBehavior)
         {
-            //home.Disable();
+            home.Disable();
         }
 
         if (initialBehavior != null)
