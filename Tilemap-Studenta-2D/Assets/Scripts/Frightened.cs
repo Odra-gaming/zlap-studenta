@@ -15,7 +15,7 @@ public class Frightened : Behavior
     {
         eaten = true;
         enemy.SetPosition(enemy.home.homePosition);
-        enemy.home.Enable(duration);
+        enemy.home.Enable(20);//duration
 
     }
 
