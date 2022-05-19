@@ -63,7 +63,7 @@ public class Node : MonoBehaviour
         // If no collider is hit then there is no obstacle in that direction
         if (hit.collider == null)
         {
-            //Debug.DrawRay(transform.position, direction, Color.black, 3000f, false);
+            Debug.DrawRay(transform.position, direction, Color.black, 3000f, false);
             availableDirections.Add(direction);
         }
     }
