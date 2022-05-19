@@ -186,7 +186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &77863347
 GameObject:
@@ -353,6 +353,10 @@ PrefabInstance:
     - target: {fileID: 4702287505780544595, guid: c0b82b0af6216a8499601bbb7c59168b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702287505780544595, guid: c0b82b0af6216a8499601bbb7c59168b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8764799107569916747, guid: c0b82b0af6216a8499601bbb7c59168b, type: 3}
       propertyPath: animationTime
@@ -534,7 +538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &636627865
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8455,6 +8459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shiba
       objectReference: {fileID: 0}
+    - target: {fileID: 1107833607085041770, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2640834198438565327, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: m_Size.x
       value: 7.5
@@ -8648,7 +8656,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1291383249
 GameObject:
@@ -10016,7 +10024,7 @@ MonoBehaviour:
   player: {fileID: 552325426}
   pellets: {fileID: 1291383250}
   UI: {fileID: 1957986036}
-  holdTime: 2
+  waitTime: 3
 --- !u!1 &1957986031
 GameObject:
   m_ObjectHideFlags: 0
@@ -10113,7 +10121,7 @@ RectTransform:
   - {fileID: 1375005590}
   - {fileID: 636627865}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10274,9 +10282,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frog
       objectReference: {fileID: 0}
+    - target: {fileID: 289188150300117540, guid: 8b6adf1820304a046bd2d7680a1ffdc2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5332891362245228709, guid: 8b6adf1820304a046bd2d7680a1ffdc2, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5332891362245228709, guid: 8b6adf1820304a046bd2d7680a1ffdc2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10722,7 +10734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6152645398470876329, guid: 00282c55aa6554540bcee1a4eddcd324, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7848498713202565967, guid: 00282c55aa6554540bcee1a4eddcd324, type: 3}
       propertyPath: m_Enabled
@@ -11003,7 +11015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8999011483434073831, guid: 51ef9fc1663c1c244b4267e1c1d63021, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ef9fc1663c1c244b4267e1c1d63021, type: 3}
@@ -11108,7 +11120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8182278422446530762, guid: 9f21aaca94c701a44b57b3a322dd5762, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f21aaca94c701a44b57b3a322dd5762, type: 3}

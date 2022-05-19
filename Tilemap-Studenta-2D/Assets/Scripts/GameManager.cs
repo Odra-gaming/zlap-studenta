@@ -16,17 +16,16 @@ public class GameManager : MonoBehaviour
     public UIHandler UI;
 
     public int multiplier { get; private set; } = 1;
-    public float holdTime = 2.0f;
     public int score { get; private set; }
 
     public int lives { get; private set; }
 
-
+    public float waitTime = 5f;
 
     //rozpocznij gre na start
     private void Start()
     {
-        NewGame();
+        StartCoroutine(MapTransition());
     }
 
     //sprawdzanie, czy gracz zresetowa³ grê po jej zakoñczeniu
@@ -48,6 +47,7 @@ public class GameManager : MonoBehaviour
     {
         SetScore(0);
         SetLives(3);
+        if (!player.isActiveAndEnabled) player.gameObject.SetActive(true);
         NewRound();
         UI.noWinYet();
     }
@@ -188,5 +188,12 @@ public class GameManager : MonoBehaviour
     private void ResetMultiplier()
     {
         multiplier = 1;
+    }
+
+    IEnumerator MapTransition()
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        NewGame();
     }
 }
