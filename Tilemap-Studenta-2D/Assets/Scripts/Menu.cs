@@ -9,13 +9,42 @@ public class Menu : MonoBehaviour
 
     public float waitTime = 1f;
 
-    public void PlayGame()
+    public void PlayWroclaw()
     {
 
-        StartCoroutine(TransitionNext(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(TransitionNext(1));
+    }
+
+    public void PlayLublin()
+    {
+
+        StartCoroutine(TransitionNext(2));
+    }
+
+    public void PlayKrakow()
+    {
+
+        StartCoroutine(TransitionNext(3));
+    }
+
+    public void PlayPoznan()
+    {
+
+        StartCoroutine(TransitionNext(4));
+    }
+
+    public void PlayWarszawa()
+    {
+
+        StartCoroutine(TransitionNext(5));
     }
 
     public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void GoBack()
     {
         Application.Quit();
     }

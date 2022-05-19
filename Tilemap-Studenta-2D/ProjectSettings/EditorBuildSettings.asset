@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Wroclaw.unity
     guid: 07e15cb1d3c2d354c8c476761c6af02b
+  - enabled: 1
+    path: Assets/Scenes/Lublin.unity
+    guid: 0e44ff57c84832042a2af60f24e32a2d
+  - enabled: 1
+    path: Assets/Scenes/krakow.unity
+    guid: 63159b326dee4e24fb975ebd364fe826
+  - enabled: 1
+    path: Assets/Scenes/Poznan.unity
+    guid: 1f5fbe71a0ed3154bb0ed5b7fb21c227
+  - enabled: 1
+    path: Assets/Scenes/Warszawa.unity
+    guid: d021548d58a82ea4fab390a1681aed8c
   m_configObjects: {}
