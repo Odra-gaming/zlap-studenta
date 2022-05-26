@@ -193,23 +193,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5197260570353309242, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.878875
+      value: 0.9240733
       objectReference: {fileID: 0}
     - target: {fileID: 5197260570353309242, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.86775
+      value: 0.8894205
       objectReference: {fileID: 0}
     - target: {fileID: 5197260570353309242, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.9240733
       objectReference: {fileID: 0}
     - target: {fileID: 5197260570353309242, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.28
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 5197260570353309242, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.26
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 5197260570353309242, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -249,7 +249,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5197260570353309244, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197260570353309245, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
+      propertyPath: m_Size.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197260570353309245, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
+      propertyPath: m_Size.y
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 5197260570353309245, guid: 428dcadba7b8dac40a7918153c780bb6, type: 3}
       propertyPath: m_Sprite
@@ -295,7 +303,7 @@ MonoBehaviour:
   player: {fileID: 530337188}
   pellets: {fileID: 342162432}
   UI: {fileID: 278028756}
-  waitTime: 5
+  waitTime: 1
 --- !u!4 &246385806
 Transform:
   m_ObjectHideFlags: 0

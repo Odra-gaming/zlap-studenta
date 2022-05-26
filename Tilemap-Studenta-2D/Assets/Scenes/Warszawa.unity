@@ -7676,7 +7676,7 @@ MonoBehaviour:
   player: {fileID: 1878042998}
   pellets: {fileID: 52243211}
   UI: {fileID: 1583465284}
-  waitTime: 5
+  waitTime: 1
 --- !u!4 &1292987661
 Transform:
   m_ObjectHideFlags: 0
