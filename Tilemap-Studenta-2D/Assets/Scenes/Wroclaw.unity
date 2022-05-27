@@ -10694,6 +10694,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 550c708810903e44cafbf6130a6e5166, type: 3}
+--- !u!4 &5658374158783003809 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1141696581169900499, guid: 550c708810903e44cafbf6130a6e5166, type: 3}
+  m_PrefabInstance: {fileID: 5658374158783003808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6830853116990775573 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7453099582515748085, guid: 51ef9fc1663c1c244b4267e1c1d63021, type: 3}
@@ -10799,7 +10804,7 @@ PrefabInstance:
     - target: {fileID: 7294753744708630963, guid: 1e980d850b77fc146811f029e50adb12, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 435045219}
+      objectReference: {fileID: 5658374158783003809}
     - target: {fileID: 8231405650534578951, guid: 1e980d850b77fc146811f029e50adb12, type: 3}
       propertyPath: m_RootOrder
       value: 10

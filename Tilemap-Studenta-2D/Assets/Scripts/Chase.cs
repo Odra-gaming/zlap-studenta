@@ -2,8 +2,16 @@ using UnityEngine;
 
 public class Chase : Behavior
 {
+    public float chaseSpeedMultiplier = 1f;
+
+    private void OnEnable()
+    {
+        enemy.movement.speedMultiplier = chaseSpeedMultiplier;
+    }
+
     private void OnDisable()
     {
+        enemy.movement.speedMultiplier = 1f;
         enemy.scatter.Enable();
     }
 

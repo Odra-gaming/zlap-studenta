@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4999735782513684010, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
+      propertyPath: duration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999735782513684010, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
+      propertyPath: chaseSpeedMultiplier
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6830853115829518791, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: target
       value: 
@@ -150,6 +158,10 @@ PrefabInstance:
     - target: {fileID: 7877485832766498184, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: startingPosition.z
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167064334740301455, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
+      propertyPath: duration
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9167064334740301455, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: m_Enabled

@@ -103,7 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1d96201cbd1a04c8f92c01689a070b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 30
+  duration: 10
+  chaseSpeedMultiplier: 2
 --- !u!114 &5856812447951703527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d6590722cdba44294de4fe3ffee24d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 15
+  duration: 30
 --- !u!50 &7745167845156825298
 Rigidbody2D:
   serializedVersion: 4

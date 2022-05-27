@@ -248,7 +248,7 @@ PrefabInstance:
     - target: {fileID: 7294753744708630963, guid: 1e980d850b77fc146811f029e50adb12, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1872803321}
+      objectReference: {fileID: 447245666}
     - target: {fileID: 8231405650534578951, guid: 1e980d850b77fc146811f029e50adb12, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1327,6 +1327,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa392d8586860de4089d415cbbe8d092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &447245666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1141696581169900499, guid: 550c708810903e44cafbf6130a6e5166, type: 3}
+  m_PrefabInstance: {fileID: 447245664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &475189496
 GameObject:
   m_ObjectHideFlags: 0
