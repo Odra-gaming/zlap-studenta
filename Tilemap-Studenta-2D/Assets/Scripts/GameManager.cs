@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,14 +32,15 @@ public class GameManager : MonoBehaviour
     //sprawdzanie, czy gracz zresetowa³ grê po jej zakoñczeniu
     private void Update()
     {
-        if (lives <= 0 && Input.anyKeyDown)
+        if (lives <= 0 && Input.GetKeyDown(KeyCode.Return))
         {
             NewGame();
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene(0);
+            //Application.Quit();
         }
     }
 
@@ -108,7 +110,7 @@ public class GameManager : MonoBehaviour
         }
         //wylacz obiekt gracza (potencjalnie podwojne wylaczenie, sprawdz potem
         player.gameObject.SetActive(false);
-
+        UI.setDeath();
     }
 
 

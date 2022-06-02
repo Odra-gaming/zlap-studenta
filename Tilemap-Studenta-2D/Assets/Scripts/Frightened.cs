@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Frightened : Behavior
 {
-
+    public SimpleAnimation basic;
+    public SimpleAnimation scawed;
     public bool eaten { get; private set; }
 
     public override void Disable()
@@ -21,12 +22,16 @@ public class Frightened : Behavior
 
     private void OnEnable()
     {
+        basic.enabled = false;
+        scawed.enabled = true;
         enemy.movement.speedMultiplier = 0.5f;
         eaten = false;
     }
 
     private void OnDisable()
     {
+        basic.enabled = true;
+        scawed.enabled = false;
         enemy.movement.speedMultiplier = 1f;
         eaten = false;
     }

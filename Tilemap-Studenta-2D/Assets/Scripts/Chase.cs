@@ -3,10 +3,13 @@ using UnityEngine;
 public class Chase : Behavior
 {
     public float chaseSpeedMultiplier = 1f;
+    public AudioSource bark;
 
     private void OnEnable()
     {
         enemy.movement.speedMultiplier = chaseSpeedMultiplier;
+        if(bark != null)
+            bark.Play();
     }
 
     private void OnDisable()

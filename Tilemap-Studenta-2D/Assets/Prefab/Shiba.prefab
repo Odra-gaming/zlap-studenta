@@ -139,6 +139,14 @@ PrefabInstance:
       propertyPath: chaseSpeedMultiplier
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6042279036572922096, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
+      propertyPath: basic
+      value: 
+      objectReference: {fileID: 2417386906704802875}
+    - target: {fileID: 6042279036572922096, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
+      propertyPath: scawed
+      value: 
+      objectReference: {fileID: -1422132303943900195}
     - target: {fileID: 6830853115829518791, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: target
       value: 
@@ -158,6 +166,10 @@ PrefabInstance:
     - target: {fileID: 7877485832766498184, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: startingPosition.z
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090333646400447903, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
+      propertyPath: m_Radius
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9167064334740301455, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
       propertyPath: duration
@@ -183,6 +195,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e6b9dd00fb73694f983147ced72e358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2417386906704802875 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1221920514386819837, guid: 82ad3a52a9f66714d8f3ea3912b22994, type: 3}
+  m_PrefabInstance: {fileID: 5658374158420537656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744900212729633106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d54e8cf1f17d9843843bdf992c92952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!82 &1353037114
@@ -308,3 +331,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-1422132303943900195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744900212729633106}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d54e8cf1f17d9843843bdf992c92952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 09b8d226da5388648abb36f65e8793a5, type: 3}
+  - {fileID: 21300000, guid: 5565bcbd435008248b4828039cf0c73b, type: 3}
+  animationIndex: 0
+  animationTime: 0.5
+  loop: 1

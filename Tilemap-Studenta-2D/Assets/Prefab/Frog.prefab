@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 8288012428229532793}
   - component: {fileID: 8001258344322284286}
   - component: {fileID: 963208999933137853}
+  - component: {fileID: 656052885732509014}
   - component: {fileID: 5998120422370670701}
   m_Layer: 7
   m_Name: Frog
@@ -56,7 +57,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 6
 --- !u!114 &7294753744708630963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 15
   chaseSpeedMultiplier: 1
+  bark: {fileID: 0}
 --- !u!114 &4314040974672761424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 0
+  basic: {fileID: 963208999933137853}
+  scawed: {fileID: 656052885732509014}
 --- !u!114 &5746136971845238997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +241,26 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 97d167b470e9d5246af4f1511512d51e, type: 3}
   animationIndex: 0
   animationTime: 0.25
+  loop: 1
+--- !u!114 &656052885732509014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140056358326036750}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d54e8cf1f17d9843843bdf992c92952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: bcec7a931bd5c3540b1db263da14399e, type: 3}
+  - {fileID: 21300000, guid: d95836e6341157549bd2c1a842043260, type: 3}
+  - {fileID: 21300000, guid: fae27a380c970304d8509c722f91e68a, type: 3}
+  - {fileID: 21300000, guid: bfb4e8d55758188498610d78a7414e97, type: 3}
+  animationIndex: 0
+  animationTime: 0.5
   loop: 1
 --- !u!82 &5998120422370670701
 AudioSource:

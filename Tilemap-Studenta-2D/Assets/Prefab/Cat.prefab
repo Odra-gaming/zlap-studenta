@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 7571611244118926869}
   - component: {fileID: 7887384067750910176}
   - component: {fileID: 7887384067750910177}
+  - component: {fileID: -5670709440773633341}
   m_Layer: 7
   m_Name: Cat
   m_TagString: Untagged
@@ -56,7 +57,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 6
 --- !u!114 &4388298762183176523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 25
   chaseSpeedMultiplier: 1
+  bark: {fileID: 0}
 --- !u!114 &882546910067931908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 0
+  basic: {fileID: 7887384067750910177}
+  scawed: {fileID: -5670709440773633341}
 --- !u!114 &7887384067750910108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,4 +355,22 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0fdb3f306809b2b44918f15214e002b7, type: 3}
   animationIndex: 0
   animationTime: 0.25
+  loop: 1
+--- !u!114 &-5670709440773633341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887384067750910182}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d54e8cf1f17d9843843bdf992c92952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 3c4032302d6f4d04e8e410675288e0c6, type: 3}
+  - {fileID: 21300000, guid: ca3e1f1b25ae5d94b86b774892b666a3, type: 3}
+  animationIndex: 0
+  animationTime: 0.5
   loop: 1

@@ -19,9 +19,14 @@ public class SimpleAnimation : MonoBehaviour
         this.spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Start()
+    void OnEnable()
     {
         InvokeRepeating(nameof(Rotate), this.animationTime, this.animationTime);
+    }
+
+    void OnDisable()
+    {
+        CancelInvoke();
     }
 
     private void Rotate()
