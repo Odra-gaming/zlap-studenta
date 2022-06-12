@@ -380,6 +380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baefc8e6b9282f34f921e4f62026b743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingPosition: {x: 0, y: 0, z: 0}
+  player_object: {fileID: 0}
   player_speed: 1
   mainCamera: {fileID: 519420031}
 --- !u!4 &1676287877
