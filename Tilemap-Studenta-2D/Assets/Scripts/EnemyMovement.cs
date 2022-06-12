@@ -70,8 +70,8 @@ public class EnemyMovement : MonoBehaviour
 
     public bool Occupied(Vector2 direction)
     {
-        // If no collider is hit then there is no obstacle in that direction //0.1875f
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position, 0.04f, direction, 1f, obstacleLayer);
+        // If no collider is hit then there is no obstacle in that direction //0.1875f    0.04f
+        RaycastHit2D hit = Physics2D.CircleCast(transform.position, 0.15f, direction, 1f, obstacleLayer);
         Debug.DrawRay(transform.position, direction*5, Color.magenta, 3f, false);
         return hit.collider != null;
     }
